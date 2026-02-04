@@ -158,7 +158,7 @@ The `levelOverrides` array alternates between level numbers and style objects. *
 
 ## First Level Colors (Branch Rainbow)
 
-Array of color sets for level 1 branches:
+Array of color sets for level 1 branches. Each branch cycles through these colors:
 ```json
 "firstLevelColors": [
     {
@@ -169,6 +169,39 @@ Array of color sets for level 1 branches:
     // ... more color sets for rainbow effect
 ]
 ```
+
+## Node Style Properties
+
+Both `mainNodeStyle` and `baseSubnodeStyle` support these properties:
+
+| Property | Type | Description |
+|----------|------|-------------|
+| `shapeType` | int | `0` = text only, `2` = rounded rectangle |
+| `borderWidth` | int | Border thickness (0-10, recommend 4-6 for bold) |
+| `borderDash` | int | `0` = solid, other values for dashed |
+| `branchDash` | int | `0` = solid branches |
+| `fillColor` | object | Background color with `lightValue`/`darkValue` |
+| `borderColor` | object | Border color with `lightValue`/`darkValue` |
+| `branchColor` | object | Branch/line color with `lightValue`/`darkValue` |
+| `titleColor` | object | Text color (uses special 4-key format) |
+| `titleFont` | object | `{"fontName": "Helvetica", "pointSize": 24}` |
+
+## Connection Style (Cross-Links)
+
+Style for connections between non-adjacent nodes:
+```json
+"connectionStyle": {
+    "lineWidth": 2,
+    "dashType": 0,
+    "startDelimiter": {"line": {}},
+    "endDelimiter": {"triangle": {}},
+    "connectionColor": { "lightValue": {...}, "darkValue": {...} },
+    "titleColor": { ... },  // 4-key format
+    "titleFont": {"fontName": "Helvetica", "pointSize": 14}
+}
+```
+
+**Delimiter types:** `{"line": {}}`, `{"triangle": {}}`, `{"circle": {}}`
 
 ## Creating a Dynamic Theme
 
