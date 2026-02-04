@@ -58,7 +58,7 @@ Once installed, try asking your AI:
 
 ```bash
 # Clone this repo
-git clone https://github.com/yourusername/mindnode-gruvbox.git
+git clone https://github.com/jguice/mindnode-gruvbox.git
 
 # Copy skill to your global skills directory
 cp -r mindnode-gruvbox/.claude/skills/mindnode-theme ~/.claude/skills/
