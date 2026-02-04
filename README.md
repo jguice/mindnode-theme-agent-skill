@@ -1,6 +1,6 @@
-# MindNode Themes & Theme Creation Skill
+# MindNode Theme Agent Skill
 
-Custom themes for [MindNode](https://www.mindnode.com/) plus an **Agent Skill** that teaches AI assistants how to create MindNode themes from any color palette.
+Custom themes for [MindNode](https://www.mindnode.com/) plus an **Agent Skill** that teaches AI assistants (Claude, Copilot, Codex, Cursor) how to create MindNode themes from any color palette.
 
 ## Quick Start
 
