@@ -1,38 +1,89 @@
-# MindNode Gruvbox Theme
+# MindNode Themes & Theme Creation Skill
 
-Custom [Gruvbox](https://github.com/morhetz/gruvbox) color scheme theme for [MindNode](https://www.mindnode.com/).
+Custom themes for [MindNode](https://www.mindnode.com/) plus an **Agent Skill** that teaches AI assistants how to create MindNode themes from any color palette.
 
-## Installation
+## Quick Start
 
-Double-click `Gruvbox.mindnodedynamictheme` to install. The theme will appear in MindNode's "Dynamic Themes" section.
+### Install a Theme
 
-## Features
+Double-click any `.mindnodedynamictheme` file to install it in MindNode.
 
-- **Light/Dark mode support**: Automatically switches between Gruvbox light and dark palettes based on system appearance
-- **Per-level styling**: Root, level 1, and level 2 nodes have rounded rectangle boxes; level 3+ are text-only with underlines
-- **7 branch colors**: Full Gruvbox accent palette (red, orange, yellow, green, aqua, blue, purple) for branch rainbow effect
-- **Bold borders**: 4-6pt border widths for clear visual hierarchy
+### Install the Skill
 
-## Theme Files
+The `mindnode-theme` skill teaches AI agents how to create MindNode themes. Install it in your AI tool of choice:
 
-| File | Description |
-|------|-------------|
-| `Gruvbox.mindnodedynamictheme` | Main dynamic theme with light/dark support |
-| `mindmanager.mindnodedynamictheme` | MindManager-style theme |
+**Using [skills.sh](https://skills.sh) CLI (easiest):**
+```bash
+npx skills add mindnode-theme
+```
 
-## Reference Files
+**Manual installation:** Copy the `.claude/skills/mindnode-theme` folder to your AI tool's skills directory (see [Installation Paths](#installation-paths) below).
 
-| File | Description |
-|------|-------------|
-| `natural.mindnodetheme` | Reference static theme from MindNode |
-| `iThoughtsX MindManager Style*.itmz-style` | Reference style files from iThoughtsX |
+## Included Themes
 
-## Creating Your Own Themes
+| Theme | Description |
+|-------|-------------|
+| `Gruvbox.mindnodedynamictheme` | [Gruvbox](https://github.com/morhetz/gruvbox) color scheme with light/dark mode, per-level styling, and 7 accent colors |
+| `mindmanager.mindnodedynamictheme` | MindManager-inspired style |
 
-See `.claude/skills/mindnode-theme/SKILL.md` for documentation on creating MindNode themes, including:
-- Dynamic theme JSON format
-- Color conversion (hex to RGBA)
-- Per-level styling with `levelOverrides`
-- Complete property reference
+## The Agent Skill
 
-Example templates are in `.claude/skills/mindnode-theme/examples/`.
+The `mindnode-theme` skill enables any compatible AI assistant to:
+
+- Convert color palettes (hex, RGB) to MindNode format
+- Create dynamic themes with automatic light/dark mode switching
+- Configure per-level styling (boxes vs text-only nodes)
+- Set up branch color rainbows
+- Package themes as `.mindnodedynamictheme` files
+
+### Example Prompts
+
+Once installed, try asking your AI:
+
+- *"Create a MindNode theme using the Dracula color palette"*
+- *"Make a Nord-themed mind map style with boxes only for the first two levels"*
+- *"Convert my brand colors to a MindNode theme"*
+
+### Installation Paths
+
+| AI Tool | Skills Location |
+|---------|-----------------|
+| **Claude Code** | `~/.claude/skills/` (global) or `.claude/skills/` (project) |
+| **Claude.ai** | Upload via skill icon in chat, or use marketplace |
+| **VS Code / Copilot** | `.github/skills/` or `.claude/skills/` in workspace |
+| **OpenAI Codex** | `~/.codex/skills/` (user) or `.codex/skills/` (repo) |
+| **Cursor** | `.cursor/skills/` or `.claude/skills/` |
+
+### Manual Installation Example (Claude Code)
+
+```bash
+# Clone this repo
+git clone https://github.com/yourusername/mindnode-gruvbox.git
+
+# Copy skill to your global skills directory
+cp -r mindnode-gruvbox/.claude/skills/mindnode-theme ~/.claude/skills/
+```
+
+## Skill Contents
+
+```
+.claude/skills/mindnode-theme/
+├── SKILL.md                 # Main skill instructions
+├── color-palettes.md        # Pre-converted popular palettes
+└── examples/
+    ├── dynamic-theme-template.json
+    ├── gruvbox-dynamic.json
+    └── gruvbox-dark-contents.xml
+```
+
+## Learn More
+
+- [Agent Skills Explained](https://www.avanderlee.com/ai-development/agent-skills-replacing-agents-md-with-reusable-ai-knowledge/) - Overview of the Agent Skills standard
+- [Claude Code Skills Documentation](https://docs.anthropic.com/en/docs/claude-code/skills)
+- [VS Code Agent Skills](https://code.visualstudio.com/docs/copilot/customization/agent-skills)
+- [awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills) - Curated list of skills for AI agents
+- [MindNode Theme Guide](https://www.mindnode.com/support/guides/themes) - Official MindNode documentation
+
+## License
+
+MIT
