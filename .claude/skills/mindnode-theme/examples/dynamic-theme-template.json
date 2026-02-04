@@ -1,0 +1,393 @@
+{
+    "mainNodeStyle": {
+        "titleColor": {
+            "againstLightBackgroundColor": {
+                "blue": 0.00784313725490196,
+                "alpha": 1,
+                "red": 0.29411764705882354,
+                "green": 0.20784313725490197
+            },
+            "againstDarkBackgroundColor": {
+                "blue": 0.184314,
+                "alpha": 1,
+                "red": 0.980392,
+                "green": 0.741176
+            },
+            "highContrastAgainstDarkBackgroundColor": {
+                "blue": 1,
+                "alpha": 1,
+                "red": 1,
+                "green": 1
+            },
+            "highContrastAgainstLightBackgroundColor": {
+                "blue": 0,
+                "alpha": 1,
+                "red": 0,
+                "green": 0
+            }
+        },
+        "borderColor": {
+            "lightValue": {
+                "blue": 0.14902,
+                "red": 0.721569,
+                "green": 0.733333,
+                "alpha": 1
+            },
+            "darkValue": {
+                "red": 0.721569,
+                "blue": 0.14902,
+                "alpha": 1,
+                "green": 0.733333
+            }
+        },
+        "fillColor": {
+            "lightValue": {
+                "alpha": 1,
+                "blue": 0.3803921568627451,
+                "green": 0.39215686274509803,
+                "red": 0.4196078431372549
+            },
+            "darkValue": {
+                "alpha": 1,
+                "blue": 0.211765,
+                "green": 0.219608,
+                "red": 0.235294
+            }
+        },
+        "branchColor": {
+            "darkValue": {
+                "alpha": 1,
+                "blue": 0.184314,
+                "green": 0.741176,
+                "red": 0.980392
+            },
+            "lightValue": {
+                "alpha": 1,
+                "blue": 0.184314,
+                "green": 0.741176,
+                "red": 0.980392
+            }
+        },
+        "branchDash": 0,
+        "borderWidth": 4,
+        "borderDash": 0,
+        "titleFont": {
+            "pointSize": 24,
+            "fontName": "Helvetica"
+        },
+        "shapeType": 2
+    },
+    "levelOverrides": [
+        3,
+        {
+            "borderColor": {
+                "lightValue": {
+                    "inherited": {
+                        "_0": {
+                            "border": {}
+                        }
+                    }
+                },
+                "darkValue": {
+                    "inherited": {
+                        "_0": {
+                            "border": {}
+                        }
+                    }
+                }
+            },
+            "shapeType": 0,
+            "branchColor": {
+                "lightValue": {
+                    "inherited": {
+                        "_0": {
+                            "branch": {}
+                        }
+                    }
+                },
+                "darkValue": {
+                    "inherited": {
+                        "_0": {
+                            "branch": {}
+                        }
+                    }
+                }
+            },
+            "borderWidth": 0,
+            "fillColor": {
+                "lightValue": {
+                    "inherited": {
+                        "_0": {
+                            "fill": {}
+                        }
+                    }
+                },
+                "darkValue": {
+                    "inherited": {
+                        "_0": {
+                            "fill": {}
+                        }
+                    }
+                }
+            }
+        },
+        2,
+        {
+            "borderWidth": 6,
+            "branchColor": {
+                "darkValue": {
+                    "inherited": {
+                        "_0": {
+                            "branch": {}
+                        }
+                    }
+                },
+                "lightValue": {
+                    "inherited": {
+                        "_0": {
+                            "branch": {}
+                        }
+                    }
+                }
+            },
+            "borderColor": {
+                "darkValue": {
+                    "inherited": {
+                        "_0": {
+                            "border": {}
+                        }
+                    }
+                },
+                "lightValue": {
+                    "inherited": {
+                        "_0": {
+                            "border": {}
+                        }
+                    }
+                }
+            },
+            "fillColor": {
+                "darkValue": {
+                    "inherited": {
+                        "_0": {
+                            "fill": {}
+                        }
+                    }
+                },
+                "lightValue": {
+                    "inherited": {
+                        "_0": {
+                            "fill": {}
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "version": 1,
+    "baseSubnodeStyle": {
+        "borderColor": {
+            "lightValue": {
+                "blue": 0.203922,
+                "red": 0.984314,
+                "green": 0.286275,
+                "alpha": 1
+            },
+            "darkValue": {
+                "blue": 0.203922,
+                "red": 0.984314,
+                "green": 0.286275,
+                "alpha": 1
+            }
+        },
+        "titleFont": {
+            "pointSize": 16,
+            "fontName": "Helvetica"
+        },
+        "branchColor": {
+            "lightValue": {
+                "blue": 0.203922,
+                "alpha": 1,
+                "red": 0.984314,
+                "green": 0.286275
+            },
+            "darkValue": {
+                "blue": 0.203922,
+                "red": 0.984314,
+                "green": 0.286275,
+                "alpha": 1
+            }
+        },
+        "fillColor": {
+            "lightValue": {
+                "blue": 0.9019607843137255,
+                "red": 0.9019607843137255,
+                "green": 0.9019607843137255,
+                "alpha": 1
+            },
+            "darkValue": {
+                "blue": 0.156863,
+                "red": 0.156863,
+                "green": 0.156863,
+                "alpha": 1
+            }
+        },
+        "titleColor": {
+            "highContrastAgainstDarkBackgroundColor": {
+                "red": 1,
+                "green": 1,
+                "alpha": 1,
+                "blue": 1
+            },
+            "againstLightBackgroundColor": {
+                "red": 0.23921568627450981,
+                "green": 0.18823529411764706,
+                "alpha": 1,
+                "blue": 0.06274509803921569
+            },
+            "againstDarkBackgroundColor": {
+                "blue": 0.698039,
+                "red": 0.921569,
+                "green": 0.858824,
+                "alpha": 1
+            },
+            "highContrastAgainstLightBackgroundColor": {
+                "red": 0,
+                "green": 0,
+                "alpha": 1,
+                "blue": 0
+            }
+        },
+        "branchDash": 0,
+        "shapeType": 2,
+        "borderDash": 0,
+        "borderWidth": 6
+    },
+    "name": "Mind Map",
+    "connectionStyle": {
+        "dashType": 0,
+        "connectionColor": {
+            "darkValue": {
+                "blue": 0.203922,
+                "red": 0.984314,
+                "alpha": 1,
+                "green": 0.286275
+            },
+            "lightValue": {
+                "blue": 0.203922,
+                "red": 0.984314,
+                "alpha": 1,
+                "green": 0.286275
+            }
+        },
+        "lineWidth": 2,
+        "endDelimiter": {
+            "triangle": {}
+        },
+        "titleColor": {
+            "againstLightBackgroundColor": {
+                "green": 0,
+                "blue": 0,
+                "red": 0,
+                "alpha": 1
+            },
+            "againstDarkBackgroundColor": {
+                "green": 1,
+                "blue": 1,
+                "red": 1,
+                "alpha": 1
+            },
+            "highContrastAgainstDarkBackgroundColor": {
+                "blue": 1,
+                "alpha": 1,
+                "red": 1,
+                "green": 1
+            },
+            "highContrastAgainstLightBackgroundColor": {
+                "blue": 0,
+                "red": 0,
+                "alpha": 1,
+                "green": 0
+            }
+        },
+        "titleFont": {
+            "fontName": "Helvetica",
+            "pointSize": 16
+        },
+        "startDelimiter": {
+            "line": {}
+        }
+    },
+    "firstLevelColors": [
+        {
+            "fillColor": {
+                "lightValue": {
+                    "red": 0.9019607843137255,
+                    "green": 0.9019607843137255,
+                    "alpha": 1,
+                    "blue": 0.9019607843137255
+                },
+                "darkValue": {
+                    "red": 0.156863,
+                    "green": 0.156863,
+                    "alpha": 1,
+                    "blue": 0.156863
+                }
+            },
+            "borderColor": {
+                "lightValue": {
+                    "red": 0.984314,
+                    "green": 0.286275,
+                    "alpha": 1,
+                    "blue": 0.203922
+                },
+                "darkValue": {
+                    "red": 0.984314,
+                    "green": 0.286275,
+                    "alpha": 1,
+                    "blue": 0.203922
+                }
+            },
+            "branchColor": {
+                "lightValue": {
+                    "red": 0.984314,
+                    "green": 0.286275,
+                    "alpha": 1,
+                    "blue": 0.203922
+                },
+                "darkValue": {
+                    "red": 0.984314,
+                    "green": 0.286275,
+                    "alpha": 1,
+                    "blue": 0.203922
+                }
+            }
+        }
+    ],
+    "tagColorStorage": [
+        {
+            "red": 0.984314,
+            "blue": 0.203922,
+            "alpha": 1,
+            "green": 0.286275
+        }
+    ],
+    "nodeBorderWidth": {
+        "undefined": {}
+    },
+    "id": "BDD8B031-97EF-44D5-81F2-1B1B83592170",
+    "backgroundColor": {
+        "lightValue": {
+            "red": 0.9019607843137255,
+            "blue": 0.9019607843137255,
+            "alpha": 1,
+            "green": 0.9019607843137255
+        },
+        "darkValue": {
+            "red": 0.156863,
+            "blue": 0.156863,
+            "alpha": 1,
+            "green": 0.156863
+        }
+    }
+}
