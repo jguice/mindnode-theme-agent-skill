@@ -58,8 +58,8 @@ Once installed, try asking your AI:
 
 ```bash
 # Clone this repo
-git clone https://github.com/jguice/mindnode-gruvbox.git
-cd mindnode-gruvbox
+git clone https://github.com/jguice/mindnode-theme-agent-skill.git
+cd mindnode-theme-agent-skill
 
 # Copy to your AI tool's skills directory:
 
