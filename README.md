@@ -17,7 +17,7 @@ The `mindnode-theme` skill teaches AI agents how to create MindNode themes. Inst
 npx skills add mindnode-theme
 ```
 
-**Manual installation:** Copy the `.claude/skills/mindnode-theme` folder to your AI tool's skills directory (see [Installation Paths](#installation-paths) below).
+**Manual installation:** Copy the `skills/mindnode-theme` folder to your AI tool's skills directory (see [Installation Paths](#installation-paths) below).
 
 ## Included Themes
 
@@ -54,20 +54,35 @@ Once installed, try asking your AI:
 | **OpenAI Codex** | `~/.codex/skills/` (user) or `.codex/skills/` (repo) |
 | **Cursor** | `.cursor/skills/` or `.claude/skills/` |
 
-### Manual Installation Example (Claude Code)
+### Manual Installation
 
 ```bash
 # Clone this repo
 git clone https://github.com/jguice/mindnode-gruvbox.git
+cd mindnode-gruvbox
 
-# Copy skill to your global skills directory
-cp -r mindnode-gruvbox/.claude/skills/mindnode-theme ~/.claude/skills/
+# Copy to your AI tool's skills directory:
+
+# Claude Code (global)
+cp -r skills/mindnode-theme ~/.claude/skills/
+
+# Claude Code (project-local)
+cp -r skills/mindnode-theme .claude/skills/
+
+# VS Code / GitHub Copilot
+cp -r skills/mindnode-theme .github/skills/
+
+# OpenAI Codex
+cp -r skills/mindnode-theme ~/.codex/skills/
+
+# Cursor
+cp -r skills/mindnode-theme .cursor/skills/
 ```
 
 ## Skill Contents
 
 ```
-.claude/skills/mindnode-theme/
+skills/mindnode-theme/
 ├── SKILL.md                 # Main skill instructions
 ├── color-palettes.md        # Pre-converted popular palettes
 └── examples/
